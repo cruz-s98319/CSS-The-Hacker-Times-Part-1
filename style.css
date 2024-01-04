@@ -1,69 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
 
+/* color for the entire html page background */
 html {
     background: #eee;
 }
 
+/* container box for all content */
 .newspaper-container {
     width: 700px;
     font-family: Source Sans pro;
     background: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #ddd;
-    padding: 1em;
+    padding: 1.5em;
+    margin: 0 auto;
 }
 
+/* border for nav bar */
 nav {
     border-top: 1px solid #777;
     border-bottom: 1px solid #777;
 }
 
+/* nav bar list alignment */
 nav ul {
     margin: 0 auto;
     padding-top: 8px;
     padding-bottom: 8px;
 }
 
+/* link styling and spacing */
 nav ul li {
     color: #777;
     list-style-type: none;
     display: inline-block;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-right: 5px;
 }
 
+/* removes hyperlink underline and changes default color */
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+/* centers header title */
 h1 {
     font-family: Abril fatface;
     text-align: center;
 }
 
+/* changes fonts for all article titles */
 h2, h4 {
     font-family: Roboto Slab;
 }
 
+/* styling for article writer, h5 tag */
 h5 {
     color: #dd3232;
-    font-family: Roboto Slab;
+    font-family: Roboto slab;
 }
 
+/* text spacing for all paragraphs */
 p {
     text-align: justify;
+    padding: 0px 15px;
 }
 
+/* changes all images to block elements and centers them within their containers */
 img {
     display: block;
     margin: 0 auto;
     width: 100%;
 }
 
+/* adds border above both extra articles */
 .more-articles {
-    margin: 0 auto;
     border-top: 1px solid #777;
 }
 
+/* changes the extra article section to inline-block to put them side-by-side */
 .more-articles section {
     display: inline-block;
     width: 45%;
     padding-right: 1em;
     padding-left: 1em;
+}
+
+/* add border above the footer */
+footer {
+    border-top: 3px double #777;
+}
+
+/* adds font to h3 tag */
+h3 {
+    font-family: Abril fatface;
+}
+
+/* changes color for h5 tag */
+footer div h5 {
+    color: black;
+}
+
+/* changed the footer section to a flex box */
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* removes bullet points for footer list and adds aligment */
+.footer-list {
+    list-style-type: none;
+    margin-left: -2.5em;
+    margin-top: -1em;
 }
