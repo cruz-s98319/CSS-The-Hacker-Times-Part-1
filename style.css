@@ -3,6 +3,7 @@
 /* color for the entire html page background */
 html {
     background: #eee;
+    height: 250vh;
 }
 
 /* container box for all content */
@@ -20,6 +21,9 @@ html {
 nav {
     border-top: 1px solid #777;
     border-bottom: 1px solid #777;
+    background: white;
+    position: sticky;
+    top: 0;
 }
 
 /* nav bar list alignment */
@@ -66,10 +70,8 @@ p {
     padding: 0px 15px;
 }
 
-/* changes all images to block elements and centers them within their containers */
+/* centers the images within their containers */
 img {
-    display: block;
-    margin: 0 auto;
     width: 100%;
 }
 
@@ -112,4 +114,8 @@ footer div h5 {
     list-style-type: none;
     margin-left: -2.5em;
     margin-top: -1em;
+}
+
+.footer-list li a {
+    color: black;
 }
